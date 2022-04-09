@@ -23,6 +23,9 @@ on post-fs
     exec u:r:update_engine:s0 root root -- /system/bin/mtk_plpath_utils
     start mtk.plpath.utils.link
 
+    # Start Boot HAL
+    start boot-hal-1-1
+
 on init
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw
 
@@ -84,3 +87,6 @@ on property:twrp.decrypt.done=true
     stop teei_daemon
     stop keymaster-4-0
     stop gatekeeper-1-0
+
+on boot
+    start health-hal-2-1

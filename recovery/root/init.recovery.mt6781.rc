@@ -1,4 +1,4 @@
-import /microtrust.rc
+import /init.recovery.microtrust.rc
 
 on post-fs
     # Support A/B feature for EMMC and UFS boot region

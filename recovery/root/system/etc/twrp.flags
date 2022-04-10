@@ -51,5 +51,5 @@
 /otp			emmc		/dev/block/platform/bootdevice/by-name/otp		flags=display="Otp"
 
 # External Storage
-/sdcard1		auto		/dev/block/mmcblk1p1					flags=display="MicroSD Card";storage;wipeingui;removable
-/usb_otg		vfat		/dev/block/sdd1						flags=display="USB-Storage";storage;wipeingui;removable
+/sdcard1		vfat		/dev/block/mmcblk0p1	/dev/block/mmcblk0		flags=display="MicroSD Card";storage;wipeingui;removable
+/usb_otg		vfat		/dev/block/sda1		/dev/block/sdd			flags=display="USB-Storage";storage;wipeingui;removable
